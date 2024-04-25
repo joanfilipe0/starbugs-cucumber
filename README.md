@@ -9,7 +9,7 @@ Certifique-se de ter o Ruby e o Bundler instalados em seu sistema. Em seguida, s
 1. Clone este repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/joanfilipe0/starbugs-cucumber
 ```
 
 2. Execute o comando bundle install para instalar as dependências do projeto. Certifique-se de ter o bundler instalado globalmente:
