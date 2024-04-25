@@ -6,7 +6,6 @@ end
 Então('eu devo ver uma lista de cafés disponíveis') do
     products = all('.coffee-item')
     expect(products.size).to be > 0
-<<<<<<< HEAD
 end
 
 Dado('que estou na página principal da starbugs') do
@@ -55,7 +54,5 @@ end
 Então('devo ver um pop-up informando que o produto está indisponível') do
     popup = find('.swal2-html-container')
     expect(popup.text).to eql 'Produto indisponível'
-  end
-=======
 end
->>>>>>> 4c641fece264d5ec8009c3b313462657a3bac4b1
+
