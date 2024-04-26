@@ -9,13 +9,12 @@ Cenário: Acessar o catálogo de cafés na páginaprincipal
     Quando acesso a página principal da starbugs
     Então eu devo ver uma lista de cafés disponíveis
 
-
 Cenário: Iniciar Compra de um Café
 
     Dado que estou na página principal da starbugs
-        E que desejo comprar "Expresso Gelado"
-        E que esse produto custa "R$ 9,99"
-        E que o custo de entrega desse item é "R$ 10,00"
+        E que desejo comprar o seguinte produto
+        | name            | price   | delivery |
+        | Expresso Gelado | R$ 9,99 | R$ 10,00 |
     Quando inicio a compra desse item
     Então devo ver a página de checkout com os detalhes do produto
         E o valor total da compra deve ser de "R$ 19,99"
@@ -24,6 +23,8 @@ Cenário: Iniciar Compra de um Café
 Cenário: café indisponível
 
     Dado que estou na página principal da starbugs
-        E que desejo comprar "Expresso Cremoso"
+        E que desejo comprar o seguinte produto
+        | name             |
+        | Expresso Cremoso |
     Quando inicio a compra desse item
     Então devo ver um pop-up informando que o produto está indisponível
